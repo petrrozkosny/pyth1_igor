@@ -1,0 +1,71 @@
+countries = {
+    "Czech Republic": {
+        "currency": "CZK",
+        "largest_cities": ["Prague", "Brno", "Ostrava", "Plzen", "Liberec"],
+        "population": 10_700_000,
+        "area_km2": 78_867
+    },
+    "Germany": {
+        "currency": "EUR",
+        "largest_cities": ["Berlin", "Hamburg", "Munich", "Cologne", "Frankfurt"],
+        "population": 83_200_000,
+        "area_km2": 357_588
+    },
+    "United States": {
+        "currency": "USD",
+        "largest_cities": ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+        "population": 331_900_000,
+        "area_km2": 9_833_520
+    },
+    "Japan": {
+        "currency": "JPY",
+        "largest_cities": ["Tokyo", "Yokohama", "Osaka", "Nagoya", "Sapporo"],
+        "population": 125_800_000,
+        "area_km2": 377_975
+    },
+    "Brazil": {
+        "currency": "BRL",
+        "largest_cities": ["Sao Paulo", "Rio de Janeiro", "Brasilia", "Salvador", "Fortaleza"],
+        "population": 214_300_000,
+        "area_km2": 8_515_767
+    },
+    "United Kingdom": {
+        "currency": "GBP",
+        "largest_cities": ["London", "Birmingham", "Manchester", "Glasgow", "Liverpool"],
+        "population": 67_500_000,
+        "area_km2": 243_610
+    },
+    "France": {
+        "currency": "EUR",
+        "largest_cities": ["Paris", "Marseille", "Lyon", "Toulouse", "Nice"],
+        "population": 67_800_000,
+        "area_km2": 643_801
+    },
+    "India": {
+        "currency": "INR",
+        "largest_cities": ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai"],
+        "population": 1_408_000_000,
+        "area_km2": 3_287_263
+    },
+    "Australia": {
+        "currency": "AUD",
+        "largest_cities": ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide"],
+        "population": 25_700_000,
+        "area_km2": 7_692_024
+    },
+    "Canada": {
+        "currency": "CAD",
+        "largest_cities": ["Toronto", "Montreal", "Vancouver", "Calgary", "Edmonton"],
+        "population": 38_200_000,
+        "area_km2": 9_984_670
+    }
+}
+
+# Ukázka práce se slovníkem
+print(countries["Czech Republic"]["currency"])  # CZK
+print(countries["Japan"]["largest_cities"][0])  # Tokyo
+print(countries["India"]["population"])  # 1408000000
+
+# Iterace přes země
+for country, info in countries.items():
+    print(f"{country}: {info['population']:,} obyvatel")
