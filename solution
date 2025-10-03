@@ -1,0 +1,92 @@
+# Úkol 1
+import requests
+
+url = input("Enter URL: ")
+status_code = requests.get(url).status_code
+if status_code == 200:
+    print("Website works")
+else:
+    print(f"Website does not work (status code: {status_code})")
+
+
+# Úkol 2
+def divide_by_two(number1):
+    print(number1 / 2)
+
+try:
+    user_input = input("Enter a number to divide by 2: ")
+    divide_by_two(int(user_input))
+except ValueError:
+    print("Value is not a valid number")
+
+try:
+    user_input = input("Enter a number to divide by 2: ")
+    divide_by_two(int(user_input))
+except ValueError:
+    print("Value is not a valid number")
+
+try:
+    user_input = input("Enter a number to divide by 2: ")
+    divide_by_two(int(user_input))
+except ValueError:
+    print("Value is not a valid number")
+
+
+# Úkol 3
+cities = ["Prague", "Brno", "Ostrava", "Plzen"]
+city_input = input("Enter a city to check: ")
+if city_input in cities:
+    print("City found")
+else:
+    print("City not found")
+
+
+# Úkol 4
+def calculator(number1, number2, operation):
+    try:
+        if operation == "sum":
+            return number1 + number2
+        elif operation == "multiply":
+            return number1 * number2
+        elif operation == "divide":
+            return number1 / number2
+        else:
+            return None
+    except (TypeError, ZeroDivisionError):
+        return None
+
+print(calculator(2, 0, "modulo"))
+
+
+# Úkol 5
+from datetime import datetime
+
+def check_day():
+    weekday = datetime.now().isoweekday()
+    if weekday > 5:
+        print("You can stay home")
+    else:
+        print("Let's go to work")
+
+check_day()
+
+
+# Úkol 6
+class Employee():
+    def __init__(self, department, health_check, id):
+        self.department = department
+        self.health_check = health_check
+        self.id = id
+        self.call_it_ready()
+    
+    def call_it_sick(self):
+        print("I need a sick-day")
+    
+    def call_it_ready(self):
+        print("Ready to start new position")
+
+veronika = Employee("HR", True, 1)
+marco = Employee("Sales", True, 2)
+jana = Employee("IT", False, 3)
+
+marco.department = "c-level"
