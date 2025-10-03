@@ -1,0 +1,61 @@
+countries = {
+    "Czechia": {
+        "capital": "Prague",
+        "largest_cities": ["Prague", "Brno", "Ostrava", "Pilsen", "Liberec"],
+        "currency": {
+            "code": "CZK",
+            "name": "Czech koruna"
+        },
+        "continent": "Europe"
+    },
+    "France": {
+        "capital": "Paris",
+        "largest_cities": ["Paris", "Marseille", "Lyon", "Toulouse", "Nice"],
+        "currency": {
+            "code": "EUR",
+            "name": "Euro"
+        },
+        "continent": "Europe"
+    },
+    "Spain": {
+        "capital": "Madrid",
+        "largest_cities": ["Madrid", "Barcelona", "Valencia", "Seville", "Zaragoza"],
+        "currency": {
+            "code": "EUR",
+            "name": "Euro"
+        },
+        "continent": "Europe"
+    },
+    "Poland": {
+        "capital": "Warsaw",
+        "largest_cities": ["Warsaw", "Krakow", "Lodz", "Wroclaw", "Poznan"],
+        "currency": {
+            "code": "PLN",
+            "name": "Polish zloty"
+        },
+        "continent": "Europe"
+    },
+    "Italy": {
+        "capital": "Rome",
+        "largest_cities": ["Rome", "Milan", "Naples", "Turin", "Palermo"],
+        "currency": {
+            "code": "EUR",
+            "name": "Euro"
+        },
+        "continent": "Europe"
+    },
+    "Japan": {
+        "capital": "Tokyo",
+        "largest_cities": ["Tokyo", "Yokohama", "Osaka", "Nagoya", "Sapporo"],
+        "continent": "Asia"
+    },
+    "India": {
+        "capital": "New Delhi",
+        "largest_cities": ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Ahmedabad"],
+        "currency": {
+            "code": "INR",
+            "name": "Indian rupee"
+        },
+        "continent": "Asia"
+    }
+}
