@@ -1,0 +1,38 @@
+1. Provide an input to user so he/she can provide a URL to check
+2. Using requests.get().status_code,check whether the insrted URL works
+3. If status_code == 200, then print "Website works", else print "Website does not work" (mention also the status code in this message)
+
+1. Provide an input to user so he/she can have a number divided by 2
+2. Create a function divide_by_two() that takes 1 positional argument number1 and prints the output of number1/2
+3. If the user provides a value that cannot be converted to integer, print "Value is not a valid number"
+4. Try to call the function 3 times with different inputs
+
+1. Create a list cities with values = Prague, Brno, Ostrava, Plzen
+2. Provide an input to user so he/she can check whether there is a specific city in the list
+3. Check, whether by user inserted value is in our list, if yes, print "City found" else print "City not found"
+
+
+1. Create a function "calculator" with 3 positional arguments: number1, number2, operation
+return a result of operation:
+	- if operation == "sum" then number1+number2
+	- if operation == "multiply then number1+number2
+	- if operation == "divide" then number1/number2
+	- else: None
+2. Handle: TypeError and ZeroDivisionError
+3. Try to call the function with these values: 2,0,"modulo"
+
+1. From module datetime import class datetime
+2. Create a function check_day() with no arguments
+3. Inside of this function:
+	- create variable weekday using datetime.now().isoweekday()
+	- if weekday >5 print "You can stay home" otherwise "Let's go to work"
+4. Call the function
+
+1. Create a class Employee()
+	- attributes: department (string),health_check (bool), id(int)
+	- method:
+		- call_it_sick (prints "I need a sick-day")
+		- call_it_ready (prints "Ready to start new position") - this one will be printed immediately when a new instance of 
+		this class is created
+2. Create instances: veronika,marco, jana (with proper parameters)
+3. Change marco's department to "c-level"
