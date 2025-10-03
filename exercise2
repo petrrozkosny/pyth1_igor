@@ -1,0 +1,12 @@
+1. Create a list asian_countries and using iteration over a dictionary, append all countries whose continent is Asia
+2. Store the name of the currency of Poland into a variable polish_currency
+3. Update Japan's currency with name = "yen", code = "JPY"
+4. Check whether Malaga is among the largest cities in Spain. If yes, print "Malaga is there", else print "Malaga is not there"
+5. Create a list capitals and append all capitals to it
+6. Print how many countries use "EUR" as a currency (find out while iterating over the dictionary)
+7. Add "Uttar Pradesh" to the largest cities in India
+8. Add the country Austria to the dictionary**:**
+
+	capital: Vienna
+	largest_cities: Vienna, Graz, Salzburg
+	currency: code = "EUR", name = "Euro"
